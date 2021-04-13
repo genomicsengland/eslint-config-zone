@@ -1,34 +1,38 @@
 {
   "name": "@zonedigital/eslint-config-zone",
-  "version": "2.0.6",
+  "version": "4.3.0",
   "description": "This package provides Zone's JavaScript style guide as an extensible shared config.",
   "main": "index.js",
-  "repository": "git@github.com:zone/frontend.git",
-  "author": "Mike Simmonds <mike@simmo.me> (https://simmo.me)",
+  "repository": "github:zone/frontend",
+  "author": "Mike Simmonds (https://simmo.codes)",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/zone/frontend/issues"
-  },
+  "bugs": "https://github.com/zone/frontend/issues",
   "homepage": "https://github.com/zone/frontend/tree/master/packages/eslint-config-zone#readme",
   "keywords": [
     "eslint",
     "eslint-config",
     "eslintrc"
   ],
+  "files": [
+    "index.js"
+  ],
   "publishConfig": {
     "access": "public"
   },
+  "engines": {
+    "node": "^8 || ^10 || ^12"
+  },
   "dependencies": {
-    "eslint-config-airbnb-base": "^12.0.2"
+    "eslint-config-airbnb-base": "^13.1.0"
   },
   "devDependencies": {
-    "eslint": "^4.0.0",
-    "eslint-plugin-compat": "^2.0.0",
-    "eslint-plugin-import": "^2.0.0"
+    "eslint-plugin-compat": "^3.0.0",
+    "eslint-plugin-import": "^2.14.0"
   },
   "peerDependencies": {
-    "eslint": "^4.0.0",
-    "eslint-plugin-compat": "^2.0.0",
+    "eslint": "^5.0.0",
+    "eslint-plugin-compat": "^3.0.0",
     "eslint-plugin-import": "^2.0.0"
-  }
+  },
+  "gitHead": "c0829f7e98daec27a56a239549065270fbd090d6"
 }
