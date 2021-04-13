@@ -10,25 +10,7 @@
 
 This package provides Zone's JavaScript style guide as an extensible shared config.
 
-## Requirements
-
-As this package is a config, you'll need to ensure you've installed any peer dependencies.
-
-### Yarn
-
-`yarn add eslint eslint-plugin-compat eslint-plugin-import`
-
-### NPM
-
-`npm i eslint eslint-plugin-compat eslint-plugin-import`
-
 ## Installation
-
-### Yarn
-
-`yarn add @zonedigital/eslint-config-zone`
-
-### NPM
 
 `npm i @zonedigital/eslint-config-zone`
 
@@ -45,10 +27,8 @@ Add the Zone rules to your eslint config. Be sure to add as the last item.
 
 ### Compat
 
-This config uses [eslint-plugin-compat](https://github.com/amilajack/eslint-plugin-compat). It lints the browser compatibility of your code via [Browserslist](https://github.com/browserslist/browserslist).
+This config uses [eslint-plugin-compat](https://github.com/amilajack/eslint-plugin-compat). It lints the browser compatibility of your code via [Browserslist](https://github.com/browserslist/browserslist) (see Zone's [browserslist package](https://github.com/zone/frontend/tree/master/packages/browserslist-config)). Potential browser compatibility issues will be shown as warnings. If you're using [babel-env](https://github.com/babel/babel/tree/master/packages/babel-preset-env#usebuiltins-usage) and it is using the same browserslist config to automatically add these polyfills, you can silence the warnings - see [Adding polyfills section](#adding-polyfills) below.
 
 #### Adding polyfills
 
 If for example you are using `fetch` and it is not supported by all the browsers in your support matrix then you can add a polyfill. To tell the linter you have done this, [add a reference to the polyfill](https://github.com/amilajack/eslint-plugin-compat/wiki/Adding-polyfills).
-
-**Optional but recommended:** Remove duplicated rules from your eslint config.
